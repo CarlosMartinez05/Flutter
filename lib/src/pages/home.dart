@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_tools/src/pages/TaskList.dart';
 import 'package:task_tools/src/pages/taskForm.dart';
 
 
@@ -25,7 +26,8 @@ class HomeState extends State<Home> {
             ],),
           ),
           body: const TabBarView(children: [
-            Center(child: Text("List"),),
+            Center(child: TaskList(),
+            ),
             Center(child: TaskForm(),)
           ],),
         )

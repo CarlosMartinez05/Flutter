@@ -1,13 +1,13 @@
 enum Energy {low, medium, high}
 
 class TaskModel{
-  String _titulo;
-  DateTime _fecha;
-  Energy _energy;
+  final String _title;
+  final DateTime _date;
+  final Energy _energy;
 
-  TaskModel(this._titulo, this._fecha, this._energy);
+  TaskModel(this._title, this._date, this._energy);
 
-  String get titulo => this._titulo;
-  DateTime get fecha => this._fecha;
-  Energy get energy => this._energy;
+  String get title => _title;
+  DateTime get date => _date;
+  Energy get energy => _energy;
 }
